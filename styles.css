@@ -41,3 +41,151 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+a, div, span, h1, h2, h3, h4, h5, h6, p, tr, th, td {
+  color: rgb(146, 146, 146);
+  font-family: 'Exo', sans-serif;
+}
+
+/* Nav Bar 1 */
+#container {
+  margin-top: 40px;
+}
+
+#navbar1 {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#nav1-left {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-self: start;
+}
+
+#nav1-left a {
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+#nav1-left a:hover {
+  color: white;
+}
+
+#nav1-right {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-self: end;
+}
+
+#nav1-right a {
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+#nav1-right a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  #navbar1 {
+    display: none;
+  }
+}
+
+/* Nav bar 2 */
+#nav2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#nav2-left {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+#nav-logo {
+  display: block;
+  width: 70px;
+  height: 40px;
+  margin-left: 0px;
+}
+
+#nav2-left a {
+  display: block;
+  margin-left: 20px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#nav2-left a:hover {
+  color: rgb(0, 0, 0);
+}
+
+#nav-right {
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+}
+
+#empty-div-nav {
+  flex: 10;
+}
+
+#menu-link {
+  display: none;
+}
+
+#search-link {
+  display: block;
+  justify-self: flex-end;
+}
+
+#menu-img {
+  width: 20px;
+  height: 20px;
+}
+
+#search-logo {
+  margin-right: 20px;
+  height: 20px;
+  width: 20px;
+  display: block;
+  padding-left: 20px;
+  border-left: 1px solid rgb(209, 209, 209);
+  justify-self: flex-end;
+}
+
+@media only screen and (max-width: 700px) {
+  #nav2-left a {
+    display: none;
+  }
+
+  #menu-link {
+    display: block;
+    justify-self: self-end;
+  }
+
+  #search-logo {
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+}
