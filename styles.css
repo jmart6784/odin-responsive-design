@@ -1186,11 +1186,172 @@ a, div, span, h1, h2, h3, h4, h5, h6, p, tr, th, td {
 }
 
 
+/* Latest Deals section */
+#latest-deals-container {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+#ld-title-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#ld-title {
+  justify-self: start;
+  display: block;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(223, 100, 29);
+  margin: 20px 0 20px 0;
+}
+
+#ls-sall {
+  justify-self: end;
+  align-self: center;
+  color: rgb(223, 100, 29);
+  text-decoration: none;
+}
+
+#ld-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.ld-div {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.ld-link {
+  display: block;
+  text-decoration: none;
+}
+
+.ld-img {
+  display: block;
+  width: 100%;
+  height: 190px;
+}
+
+.ld-title {
+  color: black;
+  text-decoration: none;
+  padding-top: 10px;
+  font-weight: 900;
+}
+
+.price {
+  color: black;
+  padding-top: 10px;
+  justify-self: start;
+}
+
+.ld-price-b {
+  font-size: 12px;
+  margin-right: 5px;
+  text-decoration: line-through;
+}
+
+@media only screen and (max-width: 1780px) {
+  #latest-deals-container {
+    width: 65%;
+  }
+
+  .ld-img {
+    height: 170px;
+  }
+}
+
+@media only screen and (max-width: 1655px) {
+  #latest-deals-container {
+    width: 70%;
+  }
+
+  .ld-img {
+    height: 165px;
+  }
+}
+
+@media only screen and (max-width: 1530px) {
+  #latest-deals-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  #latest-deals-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  #latest-deals-container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #ld-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 744px) {
+  #ld-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 0.5fr);
+    justify-content: start;
+    align-items: start;
+    column-gap: 0px;
+    row-gap: 10px;
+  }
+
+  .ld-div {
+    grid-template-columns: 0.1fr 1fr;
+    justify-self: start;
+  }
+
+  .ld-img {
+    height: 75px;
+    width: 75px;
+  }
+
+  .ld-info-div {
+    padding-left: 20px;
+  }
+
+  #ld-title {
+    font-size: 26px;
+  }
+
+  #ls-sall {
+    font-size: 15px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .ld-price-b {
+    font-size: 11px;
+  }
+}
+
 #w-test {
   background-color: black;
   font-size: 50px;
   padding: 50px 0 50px 0;
   text-align: center;
   margin-bottom: 1000px;
-  width: 980px;
+  width: 1000px;
 }
